@@ -1,0 +1,152 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>HTML & Tailwind Project</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body class="bg-gray-100 text-gray-800">
+    
+    <header class="bg-gray-800 text-white p-4">
+        <nav class="flex gap-6 items-center">
+        <a href="#" class="flex items-center gap-1"><i class="fa-solid fa-house"></i> 1</a>
+        <a href="#"><i class="fa-solid fa-user"></i> 2</a>
+        <a href="#"><i class="fa-solid fa-envelope"></i> 3</a>
+        <div class="relative group">
+            <a href="#"><i class="fa-solid fa-bell"></i> 4</a>
+            <ul class="absolute hidden group-hover:block bg-white text-black shadow-lg mt-2 rounded p-2 w-56">
+            <li class="p-1 hover:bg-gray-200"><a href="#">One new friend request</a></li>
+            <li class="p-1 hover:bg-gray-200"><a href="#">John Doe posted on your wall</a></li>
+            <li class="p-1 hover:bg-gray-200"><a href="#">Jane likes your post</a></li>
+            </ul>
+        </div>
+        </nav>
+    </header>
+
+    <div class="flex flex-col md:flex-row">
+        
+        <aside class="w-full md:w-1/4 p-4 bg-white shadow">
+        <h4 class="text-xl font-bold mb-4">My Profile</h4>
+        <div class="flex flex-col items-center">
+            <img src="/assets/avatar3.png" alt="profile-img" class="w-28 h-28 rounded-full"/>
+            <hr class="w-full my-4"/>
+            <div class="text-center">
+            <p><i class="fa-solid fa-pencil"></i> Web Developer</p>
+            <p><i class="fa-solid fa-house"></i> Tetovë, MK</p>
+            <p><i class="fa-solid fa-cake-candles"></i> 02.11.1999</p>
+            </div>
+        </div>
+        <div class="mt-4 space-y-2">
+            <button class="w-full bg-blue-500 text-white px-4 py-2 rounded"><i class="fa-solid fa-user-group"></i> My Groups</button>
+            <button class="w-full bg-blue-500 text-white px-4 py-2 rounded"><i class="fa-regular fa-calendar"></i> My Events</button>
+            <button class="w-full bg-blue-500 text-white px-4 py-2 rounded"><i class="fa-solid fa-users"></i> My Photos</button>
+        </div>
+        <div class="mt-4 flex flex-wrap gap-2">
+            <span class="bg-gray-200 px-2 py-1 rounded">News</span>
+            <span class="bg-gray-200 px-2 py-1 rounded">Games</span>
+            <span class="bg-gray-200 px-2 py-1 rounded">Design</span>
+            <span class="bg-gray-200 px-2 py-1 rounded">Art</span>
+            <span class="bg-gray-200 px-2 py-1 rounded">Photos</span>
+            <span class="bg-gray-200 px-2 py-1 rounded">Movies</span>
+        </div>
+        <div class="mt-4 bg-yellow-100 p-3 rounded">
+            <p class="mb-2">People are looking at your profile. Find out</p>
+            <button class="bg-yellow-400 px-3 py-1 rounded">WHO</button>
+        </div>
+        </aside>
+
+        
+        <main class="w-full md:w-2/4 p-4">
+        
+        <section class="bg-white shadow p-4 mb-6 rounded">
+            <h6 class="font-bold text-lg mb-2">Social Media Template</h6>
+            <p contenteditable="true" class="border border-gray-300 p-2 rounded mb-2">Status: Feeling Great</p>
+            <button class="bg-blue-500 text-white px-3 py-1 rounded"><i class="fa-solid fa-pencil"></i> Post</button>
+        </section>
+
+        
+        <article class="space-y-6">
+            
+            <div class="bg-white p-4 rounded shadow">
+            <div class="flex items-center gap-3 mb-2">
+                <img src="/assets/avatar2.png" alt="John Doe" class="w-10 h-10 rounded-full">
+                <div>
+                <h4 class="font-bold">John Doe</h4>
+                <span class="text-sm text-gray-500">1 min ago</span>
+                </div>
+            </div>
+            <p class="mb-2">Lorem ipsum dolor sit amet...</p>
+            <div class="flex gap-2 mb-2">
+                <img src="/assets/lights.jpg" alt="Lights" class="w-1/2 rounded">
+                <img src="/assets/nature.jpg" alt="Nature" class="w-1/2 rounded">
+            </div>
+            <button class="mr-2 text-blue-600"><i class="fa-solid fa-thumbs-up"></i> Like</button>
+            <button class="text-gray-600"><i class="fa-solid fa-comment"></i> Comment</button>
+            </div>
+
+            
+            <div class="bg-white p-4 rounded shadow">
+            <div class="flex items-center gap-3 mb-2">
+                <img src="/assets/avatar6.png" alt="Jane Doe" class="w-10 h-10 rounded-full">
+                <h4 class="font-bold">Jane Doe</h4>
+            </div>
+            <p>Lorem ipsum dolor sit amet...</p>
+            <button class="mr-2 text-blue-600"><i class="fa-solid fa-thumbs-up"></i> Like</button>
+            <button class="text-gray-600"><i class="fa-solid fa-comment"></i> Comment</button>
+            </div>
+
+            
+            <div class="bg-white p-4 rounded shadow">
+            <div class="flex items-center gap-3 mb-2">
+                <img src="/assets/avatar5.png" alt="Angie Jane" class="w-10 h-10 rounded-full">
+                <h4 class="font-bold">Angie Jane</h4>
+            </div>
+            <p class="mb-2">Have you seen this?</p>
+            <img src="/assets/nature (1).jpg" alt="Nature 1" class="rounded mb-2">
+            <p>Lorem ipsum dolor sit amet...</p>
+            <button class="mr-2 text-blue-600"><i class="fa-solid fa-thumbs-up"></i> Like</button>
+            <button class="text-gray-600"><i class="fa-solid fa-comment"></i> Comment</button>
+            </div>
+        </article>
+        </main>
+
+        
+        <aside class="w-full md:w-1/4 p-4 bg-white shadow">
+        <div class="mb-6">
+            <p class="font-bold">Upcoming Events:</p>
+            <img src="/assets/forest.jpg" alt="Forest" class="rounded my-2">
+            <strong>Holiday</strong>
+            <p>Friday 15:00</p>
+            <button class="bg-green-500 text-white px-3 py-1 rounded mt-2">Info</button>
+        </div>
+
+        <div class="mb-6">
+            <p class="font-bold">Friend Request</p>
+            <div class="flex items-center gap-3 mt-2">
+            <img src="/assets/avatar6.png" alt="Jane Doe" class="w-10 h-10 rounded-full">
+            <span>Jane Doe</span>
+            <button class="bg-green-500 text-white px-2 py-1 rounded"><i class="fa fa-check"></i></button>
+            <button class="bg-red-500 text-white px-2 py-1 rounded"><i class="fa fa-xmark"></i></button>
+            </div>
+        </div>
+
+        <div class="mb-6">
+            <p>ADS</p>
+        </div>
+
+        <div class="text-red-600 text-3xl">
+            <i class="fa fa-bug"></i>
+        </div>
+        </aside>
+    </div>
+
+    
+    <footer class="bg-gray-800 text-white text-center p-4 mt-4">
+        <h5>Footer - Have fun!</h5>
+    </footer>
+    </body>
+    </html>
